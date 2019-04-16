@@ -13,10 +13,10 @@ paths:
       tags:
       - "test"
       summary: "Output static strings"
-      description: "test APvimI"
+      description: "test API"
       responses:
         200:
-          description: "Hello, test API !"
+          description: "successful operation"
   /uinfo:
     get:
       tags:
@@ -29,7 +29,7 @@ paths:
           in: "query"
           required: false
           type: "string"
-          description: ""
+          description: "ID of user"
       responses:
         200:
           description: "successful operation"
@@ -41,7 +41,7 @@ paths:
                 format: "int64"
               content:
                 type: "string"
-                example: "Hello, API {name}!"
+                example: "Hello, {name}!"
 ----
 
 == やりたいことリスト
