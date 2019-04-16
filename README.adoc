@@ -1,4 +1,4 @@
-：source-highlightighter：coderay
+:source-highlighter: coderay
 
 = Test Web API
 
