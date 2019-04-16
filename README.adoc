@@ -1,9 +1,63 @@
+：source-highlightighter：coderay
+
 = Test Web API
 
-実装した
+[source,yml]
+.API定義
+----
+schemes:
+- "http"
+paths:
+  /test:
+    get:
+      tags:
+      - "test"
+      summary: "Output static strings"
+      description: "test APvimI"
+      responses:
+        200:
+          description: "Hello, test API !"
+  /uinfo:
+    get:
+      tags:
+      - "uinfo"
+      summary: "Get user infomation"
+      description: "Output user id and content"
+      parameters:
+        -
+          name: "name"
+          in: "query"
+          required: false
+          type: "string"
+          description: ""
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            type: "object"
+            properties:
+              id:
+                type: "integer"
+                format: "int64"
+              content:
+                type: "string"
+                example: "Hello, API {name}!"
+----
 
-* /test
-* /uinfo
+== やりたいことリスト
+
+* REATfulの理解
+* Web APIの設計
+* Swagger YAMLベースAPI定義書
+* POSTでJSONボディのHTTPリクエストを受取るAPI
+* PUTでDBにHTTPリクエストパラメータの値を保存するAPI
+* DELETEでHTTPリクエストパラメータの値に対応するDBのデータを削除するAPI
+* URLパスに任意の値を入れ、異なるリソースの取得
+* API間の連携
+* OAuth2.0とは
+* Web APIのセキュリティ
+* Spring Bootの機能の掘り下げ
+* Java力の向上
 
 == 参考資料
 
@@ -11,3 +65,6 @@
 * link:https://blog.y-yuki.net/entry/2016/10/12/003000[Lombok - @Getter / @Setter]
 * link:https://mvnrepository.com/[MVN REOPSITORY]
 * link:https://www.gitignore.io/[gitignore.io]
+* link:https://EditorConfig.org[EditorConfig]
+* link:https://swagger.io/docs/[Swagger Documentation]
+* link:https://editor.swagger.io/[Swagger Editor]
