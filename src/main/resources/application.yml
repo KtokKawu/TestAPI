@@ -1,0 +1,8 @@
+# https://docs.spring.io/spring-boot/docs/2.1.4.RELEASE/reference/htmlsingle/#boot-features-external-config-yaml
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+#    url: jdbc:h2:mem:localhost;DB_CLOSE_ON_EXIT=FALSE
+    url: jdbc:h2:file:./dblog/testdb
+    username: testuser
+    password: testuser

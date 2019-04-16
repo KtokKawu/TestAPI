@@ -1,0 +1,13 @@
+= Test Web API
+
+実装した
+
+* /test
+* /uinfo
+
+== 参考資料
+
+* link:https://spring.io/guides/gs/rest-service/[Building a RESTful Web Service]
+* link:https://blog.y-yuki.net/entry/2016/10/12/003000[Lombok - @Getter / @Setter]
+* link:https://mvnrepository.com/[MVN REOPSITORY]
+* link:https://www.gitignore.io/[gitignore.io]
